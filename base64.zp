@@ -24,7 +24,7 @@
       :err-invalid-length)))
 
   (encode (lambda (str)
-    (let ((bytes (string->byte-vector str))
+    (let ((bytes (if (string? str) (string->byte-vector str) str))
           (get-mask (lambda (pattern)
             (arithmetic-shift 255 (+ -8 (- pattern)))))
           (get-padding (lambda (pattern)
