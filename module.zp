@@ -1,12 +1,12 @@
-#{:name "base64" 
-  :version "0.1.1" 
-  :license "GPLv2" 
+#{:name "base64"
+  :version "0.1.2"
+  :license "GPLv2"
   :tests []
   :type :library
-  :author #{:name "Veit Heller" 
-            :email "veit@veitheller.de" 
+  :author #{:name "Veit Heller"
+            :email "veit@veitheller.de"
             :github "@hellerve"}
-  :location #{:github "hellerve/base64" 
+  :location #{:github "hellerve/base64"
               :zpr "base64"}
   :zepto #{:version :any
            :ez #f
